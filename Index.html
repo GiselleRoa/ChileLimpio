@@ -6,7 +6,47 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+
+<!-- gis: genero, email, celular, profesion, motivacion para postular-->
+
 <body>
+    <form action="datos/datos_procesados.html" method="post" enctype="application/x-www-form-urlencoded" name="formulario1">
+        <fieldset>
+
+            <legend>Ingrese sus datos en el formulario de postulacion</legend>
+
+    <!-- genero -->
+            <legend>Seleccione su genero</legend>
+
+            <select name="Genero" id="genero">
+                <option value="1">Masculino</option>
+                <option value="2">Femenino</option>
+                <option value="3">Prefiero no decirlo</option>
+            </select>
+
+    <!-- email -->
+            <legend>ingrese su email</legend>
+            <input type="email" id="email" name="email"required placeholder="ingrese su email">
+
+    <!-- celular -->
+            <label for="celular">celular</label>
+            <input type="text" id="celular" name="celular" required placeholder="ingrese su celular">
+
+    <!-- profesion -->
+            <label for="profesion">profesion</label>
+            <input type="text" id="profesion" name="profesion" required placeholder="ingrese su profesion">
+
+    <!-- motivacion -->
+            <br>
+            <textarea cols="15" rows="5" required>motivacion para postular a este trabajo</textarea>
+    <!-- botones -->
+    <br>
     
+            <input type="button" value="valida formulario" ondblclick="crear_carta()">
+            <input type="submit">
+            <input type="reset">
+        </fieldset>
+
+    </form>
 </body>
 </html>
